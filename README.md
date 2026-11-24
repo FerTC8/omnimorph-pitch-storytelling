@@ -17,7 +17,9 @@
 | Documento | Tipo de Entregable | Descripción y Alcance |
 | :--- | :--- | :--- |
 | 📄 **[`PROBLEMA_Y_SOLUCION.md`](PROBLEMA_Y_SOLUCION.md)** | **ENTREGABLE OFICIAL** | Síntesis ejecutiva de envío de **470 palabras exactas** (límite estricto $\le 500$ palabras). Estructurado en: El Problema, La Solución e Innovación Técnica, e Impacto y Viabilidad. |
-| 🎬 **[`PITCH_DECK.md`](PITCH_DECK.md)** | **ENTREGABLE OFICIAL** | Guión milimétrico para el **Video de Demostración de 3 Minutos (180 s)**, con marcas segundo a segundo, visual en pantalla y guión palabra por palabra para el orador y Roy (slot modular técnico). |
+| 🎬 **[`PITCH_DECK_V2.md`](PITCH_DECK_V2.md)** | **GUION ACTUALIZADO (V2)** | Versión alternativa y actualizada del guión de 3 min (180 s) centrada en la **solución universal en pantalla (UI real), demo del Chatbot táctico en vivo** y presentación del equipo (Roy, Mariana, Fer). |
+| 📊 **[`PITCH_DECK_IBM_V2.pptx`](PITCH_DECK_IBM_V2.pptx)** | **DECK ACTUALIZADO (V2)** | Presentación PPTX de 6 diapositivas con la narrativa universal abierta a toda la industria deportiva, chatbot y equipo. |
+| 🎬 **[`PITCH_DECK.md`](PITCH_DECK.md)** | Versión V1 | Guión milimétrico original para el Video de 3 Minutos con enfoque en el dualismo élite vs. llano y slot modular de Roy. |
 | 🎙️ **[`GUIA_DEMO_Y_QA.md`](GUIA_DEMO_Y_QA.md)** | Material de Respaldo | Guía paso a paso para grabar el minuto de demo en vivo (1:15 a 2:15) y banco de defensa con respuestas a preguntas difíciles de los 3 especialistas evaluadores de IBM. |
 | 📖 **[`STORYTELLING.md`](STORYTELLING.md)** | Material de Respaldo | Crónica profunda de los dos mundos: la saturación de 40,000 datos en el vestidor de élite frente a la invisibilidad del talento llanero en canchas de tierra (Caso Mateo y Kevin). |
 | 📊 **[`INVESTIGACION_Y_AMATEUR.md`](INVESTIGACION_Y_AMATEUR.md)** | Material de Respaldo | Benchmarks de evaluación para el jurado de IBM, análisis comparativo de costos frente a Catapult y Wyscout, y fundamentos del semillero amateur en México. |

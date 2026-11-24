@@ -292,3 +292,139 @@ flowchart LR
     C --> D["2:15 - 2:45 (30s)<br/>Semillero Amateur<br/>(Pasaporte Táctico)"]
     D --> E["2:45 - 3:00 (15s)<br/>Gobernanza y Cierre<br/>(Granite + M3 en PASS)"]
 ```
+
+
+---
+
+## 07. El "Efecto Strava" del Fútbol Amateur y Autoanálisis sin Costo
+
+### Contexto / Prompt Original del Usuario:
+```text
+here is an idea i had. we can use this telemetry tool not only for professional soccer, but also for amateur soccer for people to record themselves playing and analyze their own play instead of having to spend a lot of money or be in huge stadiums. what do you think? don't create anyhting, just brainstorming 
+```
+
+### Respuesta del Agente (Palabra por palabra):
+
+Esta idea es **brillante**, y te digo exactamente por qué le da una vuelta de 180 grados al proyecto:
+
+### 1. El "Efecto Strava" que el fútbol amateur nunca ha tenido
+Piénsalo así:
+* Si sales a correr o a rodar en bicicleta, tienes **Strava, Garmin o Apple Watch**. Sabes tu ritmo por kilómetro, tu elevación y tus zonas de frecuencia cardíaca. Terminas y compartes tu mapa con orgullo.
+* **En el fútbol de fin de semana, estamos en la edad de piedra.** Juegas 90 minutos en una cancha de tierra o en una liga nocturna de fútbol 7, y al terminar todo queda en discusiones subjetivas en el tercer tiempo: *"es que no bajaste a defender"*, *"yo corrí el triple que tú"*, *"nos ganaron la espalda por culpa de los centrales"*.
+* Con Omnimorph, un grupo de amigos o un equipo llanero pone un **celular en un tripié en la banda**, sube el clip, y al terminar el partido cada quien tiene su **mapa de calor, su radar 2D y su velocidad punta**.
+
+---
+
+### 2. Resuelve el dolor de las alternativas caras (Veo / GPS)
+Hoy existen cámaras automáticas para fútbol como **Veo**, pero:
+* La cámara cuesta más de **$1,000 USD** y te cobran suscripciones de **$1,200 a $2,000 USD al año**.
+* Los chalecos GPS tipo Catapult o PlayerMaker son carísimos y necesitas uno por cada jugador del equipo.
+* **Tu propuesta rompe esa barrera:** Cero hardware especializado. Un teléfono común graba desde la orilla, y tu motor se encarga de corregir la perspectiva (homografía) y rastrear a los jugadores. Democratizas la tecnología que hoy solo usan el Real Madrid o el Manchester City para que la use el equipo de la oficina o de la universidad.
+
+---
+
+### 3. La magia para el jugador promedio: El resumen con voz de Granite
+Imagínate esto a nivel producto:
+* Termina tu partido del domingo.
+* En lugar de esperar a que alguien edite un video de 1 hora, te llega un mensaje al celular con:
+  1. El minimapa 2D de tus desmarques.
+  2. Tu métrica: *"Alcanzaste 26.4 km/h en el minuto 35 y recuperaste 4 balones en bloque medio"*.
+  3. **Un audio de 30 segundos generado por Granite 3 8B** narrando tu mejor jugada como si fuera un cronista profesional.
+* Eso no solo sirve para mejorar tácticamente; es **adictivo para compartirlo en el grupo de WhatsApp del equipo o en redes sociales**.
+
+---
+
+### 4. Por qué a los 3 evaluadores de IBM les va a encantar esta arista
+A los evaluadores técnicos y de negocio de IBM les fascina cuando una solución demuestra **escalabilidad de mercado**:
+* Si solo le vendes a clubes de Primera División, tu mercado en México son **18 equipos** (un mercado minúsculo).
+* Si lo abres al fútbol amateur y ligas formativas, tu mercado son **más de 1.5 millones de partidos por semana** solo en México.
+* Demuestra que la arquitectura en IBM Cloud (con **watsonx Orchestrate** ejecutando el cálculo en $< 1.5$ s y **Granite 3 8B** con tokens mínimos) fue diseñada para procesar millones de partidos a un costo por usuario de centavos de dólar.
+
+---
+
+**Rebotando ideas:**  
+¿Cómo te imaginas la experiencia del usuario final amateur? ¿Un chavo que revisa su propio "perfil de jugador" en su teléfono después de jugar, o el capitán del equipo que usa el radar 2D para armar la alineación del siguiente domingo?
+
+
+---
+
+## 08. Validación con Video Amateur: El Caso Veo vs. Video Real de Llano/Celular
+
+### Contexto / Prompts y Respuestas (Palabra por palabra):
+
+#### Turno A: Búsqueda del primer video de prueba amateur
+
+**Prompt del Usuario:**
+```text
+for now i need to make sure it works. look for one single video that i could use, even if it's just a clip, but i want to test it with our tool. just give me the link, you don't have to donwload it.
+```
+
+**Respuesta del Agente:**
+> Aquí tienes el enlace ideal para probar el motor con fútbol amateur real:
+> 
+> 🔗 **[Veo Camera Example – Soccer Game Recording (YouTube)](https://www.youtube.com/watch?v=0IOil6yVnBU)**
+> 
+> ---
+> 
+> ### ¿Por qué este video es el candidato perfecto para probar Omnimorph?
+> 
+> 1. **Perspectiva Lateral Elevada (Estilo Tripié Amateur):** Está grabado desde la orilla de la cancha a una altura estándar (poste/tripié de 3 a 4 metros), que es exactamente como graba un equipo amateur o un padre de familia.
+> 2. **Líneas de Cancha Visibles:** Las líneas de banda, área grande y medio campo están claramente marcadas sobre el césped, lo que le permite al **Agente 1 (`YOLOv8x-pose`)** detectar los *landmarks* clave y al **Agente 6 (`ViewTransformer`)** calcular la homografía $H$ inicial sin perderse.
+> 3. **Contraste de Uniformes:** Ambos equipos visten colores diferenciados, permitiendo que **SigLIP + KMeans (Agente 5)** clasifique los dos grupos sin parpadeo.
+> 4. **Prueba de Fuego para la Homografía:** Al ser una toma con movimiento de cámara no profesional, es el escenario ideal para comprobar cómo el filtro adaptativo **$P_1$** y el suavizado cinemático **$P_2$ (Savitzky-Golay)** contienen los saltos de velocidad ($v \le 9.5\text{ m/s}$) sin teletransportar a los jugadores.
+
+---
+
+#### Turno B: ¿Veo es un dispositivo? ¿Cuenta como amateur?
+
+**Prompt del Usuario:**
+```text
+in the description i see "This Veo camera example footage is per the request of soccer teams researching sports cameras that emailed or commented asking to see an example game."
+Is this a device? could this count as amateur?
+```
+
+**Respuesta del Agente:**
+> **Sí, Veo es un dispositivo físico.** Y entender qué es te da un argumento tremendo para tu pitch. Te explico ambas partes:
+> 
+> ---
+> 
+> ### 1. ¿Qué es Veo exactamente?
+> Veo es una cámara especializada con dos lentes 4K que se monta en un tripié verde muy alto (de 6 a 7 metros) en la mitad de la cancha. 
+> * Fue creada específicamente para **equipos amateur, academias juveniles y colegios** que no tienen presupuesto para contratar un camarógrafo profesional.
+> * **El partido del video sí es 100% fútbol amateur:** Los jugadores, la cancha y el contexto son de liga local/escolar (no hay estadio, no hay público en gradas masivas, no es televisión profesional).
+> 
+> ---
+> 
+> ### 2. ¿Por qué esto es perfecto para el pitch? (El contraste con Omnimorph)
+> Aunque el partido es amateur, **el dispositivo Veo NO es accesible para el fútbol popular o de barrio**:
+> * La camarita cuesta entre **$1,000 y $1,500 USD**.
+> * Además, te obligan a pagar una suscripción de software de **$1,200 a $2,000 USD al año** para procesar los partidos.
+> * Para una escuela privada o un club semiprofesional en EE.UU. o Europa es costeable, pero para el 99% de los equipos de barrio o ligas llaneras en México y Latinoamérica, **ese precio es una barrera imposible**.
+> 
+> **Aquí está tu gancho de negocio frente a los 3 especialistas de IBM:**
+> > *"Hoy, si un equipo amateur quiere grabarse y tener seguimiento, la alternativa de mercado es comprar un dispositivo como Veo que cuesta miles de dólares en equipo y licencias anuales.*
+> > 
+> > *Con Omnimorph rompemos la tiranía del hardware: aplicamos visión por computadora e inteligencia artificial en la nube para obtener telemetría 2D y crónica táctica directamente desde cualquier video, incluso el que graba un papá o un amigo con su teléfono celular desde la banda."*
+> 
+> ---
+> 
+> ### 3. ¿Sirve para probar tu motor hoy?
+> **Totalmente, es el puente ideal:**
+> * La escala de los jugadores, la velocidad del juego, los uniformes y la perspectiva lateral elevada son **exactamente los de un partido amateur real**.
+> * Te permite probar si tu modelo de homografía ($P_1$) y los agentes de visión ($A_1$ a $A_6$) se adaptan a una cancha no profesional sin los reflectores ni las cámaras cenitales de un Mundial.
+> 
+> *(Si más adelante quieres probar el caso extremo: un video grabado a nivel de cancha con teléfono móvil en una liga dominical mexicana, también podemos probarlo, pero este clip de Veo es el estándar de prueba perfecto para validar la transición de la élite al llano).*
+
+---
+
+#### Turno C: Búsqueda del caso extremo (Liga dominical mexicana / celular a nivel de cancha)
+
+**Prompt del Usuario:**
+```text
+use as little tokens as possible for this next test. look for a real amateur video, i am talking extreme case [un video grabado a nivel de cancha con teléfono móvil en una liga dominical mexicana]
+```
+
+**Respuesta del Agente:**
+> https://www.youtube.com/watch?v=o2lT8v6nht4
+> 
+> *(Título del video encontrado: "Casual Amateur Soccer Games in Mexico City" - video auténtico a nivel de cancha en la CDMX).*
