@@ -16,10 +16,12 @@
 
 | Documento | Tipo de Entregable | Descripción y Alcance |
 | :--- | :--- | :--- |
+| 🎬 **[`PITCH_DECK.md`](PITCH_DECK.md)** | **PITCH DECK OFICIAL (V3)** | Guion maestro y estructura de diapositivas alineada con el guion final del video de 3:00 (v2), diseño Dark Mode (IBM Carbon / Napkin) y títulos conceptuales en español. |
+| 📊 **[`PITCH_DECK_IBM_V3.pptx`](PITCH_DECK_IBM_V3.pptx)** | **PRESENTACIÓN OFICIAL (V3)** | Slide deck ejecutivo de 7 diapositivas en Dark Mode (`#161616`) con tarjetas modulares, métricas de impacto ($20,000 USD vs. 95% clubes) y gobernanza. |
+| 📄 **[`PITCH_DECK_V3.md`](PITCH_DECK_V3.md)** | **DOCUMENTO V3 EXPANDIDO** | Especificación completa de la Versión 3.0 con calibración segundo a segundo, notas de pantalla y transcripción palabra por palabra. |
 | 📄 **[`PROBLEMA_Y_SOLUCION.md`](PROBLEMA_Y_SOLUCION.md)** | **ENTREGABLE OFICIAL** | Síntesis ejecutiva de envío de **470 palabras exactas** (límite estricto $\le 500$ palabras). Estructurado en: El Problema, La Solución e Innovación Técnica, e Impacto y Viabilidad. |
-| 🎬 **[`PITCH_DECK_V2.md`](PITCH_DECK_V2.md)** | **GUION ACTUALIZADO (V2)** | Versión alternativa y actualizada del guión de 3 min (180 s) centrada en la **solución universal en pantalla (UI real), demo del Chatbot táctico en vivo** y presentación del equipo (Roy, Mariana, Fer). |
-| 📊 **[`PITCH_DECK_IBM_V2.pptx`](PITCH_DECK_IBM_V2.pptx)** | **DECK ACTUALIZADO (V2)** | Presentación PPTX de 6 diapositivas con la narrativa universal abierta a toda la industria deportiva, chatbot y equipo. |
-| 🎬 **[`PITCH_DECK.md`](PITCH_DECK.md)** | Versión V1 | Guión milimétrico original para el Video de 3 Minutos con enfoque en el dualismo élite vs. llano y slot modular de Roy. |
+| 🎬 **[`PITCH_DECK_V2.md`](PITCH_DECK_V2.md)** | Versión V2 | Versión previa centrada en la solución universal y demo del Chatbot táctico. |
+| 📊 **[`PITCH_DECK_IBM_V2.pptx`](PITCH_DECK_IBM_V2.pptx)** | Versión V2 | Presentación PPTX previa de 6 diapositivas en fondo claro. |
 | 🎙️ **[`GUIA_DEMO_Y_QA.md`](GUIA_DEMO_Y_QA.md)** | Material de Respaldo | Guía paso a paso para grabar el minuto de demo en vivo (1:15 a 2:15) y banco de defensa con respuestas a preguntas difíciles de los 3 especialistas evaluadores de IBM. |
 | 📖 **[`STORYTELLING.md`](STORYTELLING.md)** | Material de Respaldo | Crónica profunda de los dos mundos: la saturación de 40,000 datos en el vestidor de élite frente a la invisibilidad del talento llanero en canchas de tierra (Caso Mateo y Kevin). |
 | 📊 **[`INVESTIGACION_Y_AMATEUR.md`](INVESTIGACION_Y_AMATEUR.md)** | Material de Respaldo | Benchmarks de evaluación para el jurado de IBM, análisis comparativo de costos frente a Catapult y Wyscout, y fundamentos del semillero amateur en México. |
