@@ -1,158 +1,191 @@
-# 🎬 OMNIMORPH v3 — Guión Oficial de Pitch y Video de Demostración (3 Minutos / 180 Segundos)
+# 🎬 OMNIMORPH v3 — Guion Oficial de Pitch y Video de Demostración (3:00 Minutos)
 
 **Convocatoria:** IBM SkillsBuild AI Experiential Learning Lab México 2026  
 **Proyecto:** Omnimorph (`omnimorph-ibm-ai-lab`)  
-**Duración Exacta del Video:** 03:00 (180 segundos)  
-**Destinatarios:** Tres especialistas evaluadores de IBM SkillsBuild  
-**Objetivo:** Demostrar rigor arquitectónico en IBM watsonx, excelencia de visión por computadora y valor humano tangible sin clichés corporativos.
+**Duración Total del Video:** Exactamente 03:00 (180 segundos)  
+**Fuente Oficial del Guion:** *Omnimorph · Guion final del video (3:00) v2*  
+**Objetivo:** Alinear con exactitud el guion palabra por palabra, las marcas de tiempo y el contenido visual con la estructura diapositiva por diapositiva del pitch oficial para el jurado de especialistas de IBM.
 
 ---
 
-## ⏱️ Mapa de Tiempos y Calibración Segundo a Segundo
+## ⏱️ Mapa de Tiempos y Calibración Segundo a Segundo (180 Segundos)
 
 ```mermaid
 flowchart LR
-    A["0:00 - 0:35 (35s)<br/>El Doble Dolor<br/>(Élite vs. Llano)"] --> B["0:35 - 1:15 (40s)<br/>Arquitectura Híbrida<br/>(Slot Roy + Orchestrate)"]
-    B --> C["1:15 - 2:15 (60s)<br/>Demo en Vivo 4 Paneles<br/>(Reloj Maestro + M1-M4)"]
-    C --> D["2:15 - 2:45 (30s)<br/>Semillero Amateur<br/>(Pasaporte Táctico)"]
-    D --> E["2:45 - 3:00 (15s)<br/>Gobernanza y Cierre<br/>(Granite 3 8B + M3)"]
+    A["0:00 - 0:18 (18s)<br/>Inicio / El Problema<br/>(La libreta vs. anticipación)"] --> B["0:18 - 1:08 (50s)<br/>Detección y Radar 2D<br/>(Clip Costa Rica vs. SKN)"]
+    B --> C["1:08 - 1:48 (40s)<br/>MATEO + Gobernanza<br/>(Granite + 9 revisiones)"]
+    C --> D["1:48 - 2:38 (50s)<br/>Chatbot y Método<br/>(Q&A táctico + IBM stack)"]
+    D --> E["2:38 - 3:00 (22s)<br/>Cierre, Equipo y Visión<br/>(Propósito + Punchline)"]
 ```
 
-| Bloque | Rango de Tiempo | Duración | Enfoque Principal | Visual en Pantalla |
-| :--- | :--- | :--- | :--- | :--- |
-| **Bloque 1** | 0:00 - 0:35 | 35 s | El Doble Dolor Humano | Pantalla dividida: Vestidor de élite vs. Cancha de tierra. |
-| **Bloque 2** | 0:35 - 1:15 | 40 s | Arquitectura y Contención Física | Diagrama de flujo híbrido + Slot de Roy (P1, P2, P3) + Orchestrate. |
-| **Bloque 3** | 1:15 - 2:15 | 60 s | Demostración en Vivo | Dashboard de 4 Paneles sincronizados + 9 semáforos en `PASS`. |
-| **Bloque 4** | 2:15 - 2:45 | 30 s | Democratización y Semillero | Pasaporte Táctico Objetivo (Caso Mateo y Kevin). |
-| **Bloque 5** | 2:45 - 3:00 | 15 s | Gobernanza y Cierre | Registro `governance_audit.jsonl` (M3) + Remate final. |
-
----
-
-## 📋 Guión Detallado Bloque por Bloque
-
----
-
-### Bloque 1: El Doble Dolor Humano (0:00 - 0:35 | 35 segundos)
-
-#### 🖼️ Elemento Visual en Pantalla:
-* **0:00 - 0:15:** Pantalla dividida en dos tomas cinematográficas.
-  * *Lado Izquierdo (La Élite):* Un cuerpo técnico en el vestidor durante el medio tiempo mirando 20 pestañas abiertas de hojas de cálculo con 40,000 coordenadas $(x, y)$ incomprensibles. Texto superpuesto: *"Élite: 40,000 datos brutos / 15 minutos para decidir"*.
-  * *Lado Derecho (El Llano):* Un joven de 16 años (Mateo) jugando en una cancha de tierra y cal desgastada en la periferia urbana, bajo el sol, sin cámaras ni sensores. Texto superpuesto: *"Amateur: 1.5 millones de partidos semanales / 95% de talento invisible"*.
-* **0:15 - 0:35:** Zoom al centro donde ambas realidades convergen en el logotipo de **Omnimorph**. Frase central: *"El fútbol no necesita más números; necesita un traductor táctico"*.
-
-#### 🎙️ Guión Palabra por Palabra para el Orador:
-
-> **[0:00]** *"En el fútbol profesional, el cuerpo técnico tiene solo quince minutos de medio tiempo para descifrar más de cuarenta mil coordenadas de telemetría. Nadie puede leer una sopa de números bajo esa presión.*  
-> 
-> **[0:14]** *Al mismo tiempo, en una cancha de tierra a quince kilómetros de distancia, un chico de dieciséis años juega el partido de su vida: corre diez kilómetros y corta catorce líneas de pase. Pero para las visorías tradicionales, ese chico no existe.*  
-> 
-> **[0:26]** *La élite se ahoga en datos crudos; el llano es invisible por falta de tecnología accesible. Creamos **Omnimorph** para resolver esta fractura."*
-
-* **Notas de entonación:** Ritmo pausado, tono seguro, contacto visual directo a la cámara. Pausa deliberada de 1 segundo al decir "ese chico no existe".
-
----
-
-### Bloque 2: Arquitectura y Motor Técnico (0:35 - 1:15 | 40 segundos)
-
-#### 🖼️ Elemento Visual en Pantalla:
-* **0:35 - 0:45:** Diagrama de arquitectura de dos capas.
-  * *Capa Borde (GPU Local):* 6 agentes de visión rastreando 22 jugadores, árbitros y balón.
-  * *Capa Nube (IBM Cloud):* **watsonx Orchestrate ADK** en CPU recibiendo paquetes $< 500\text{ bytes}$ + **`ibm/granite-3-8b-instruct`**.
-* **0:45 - 1:05 (Slot Técnico de Roy):** Cámara cambia a Roy (o recuadro picture-in-picture) mostrando gráficos de validación física:
-  * Gráfico $P_1$: Homografía con EMA normalizada por $H_{2,2}$ (curva sin saltos bruscos).
-  * Gráfico $P_3$: Matriz de costos del Algoritmo Húngaro resolviendo oclusiones de jugadores.
-  * Gráfico $P_2$: Filtro Savitzky-Golay con cota fisiológica en $9.5\text{ m/s}$.
-* **1:05 - 1:15:** Regreso al presentador señalando la conexión con **watsonx Orchestrate**.
-
-#### 🎙️ Guión Palabra por Palabra para el Orador y Roy:
-
-> **[0:35 - Presentador]:** *"Para traducir la cancha no podíamos pedirle a una inteligencia artificial que adivinara lo que pasa en un video. Necesitábamos física estricta. Le cedo la palabra a Roy, nuestro líder técnico."*  
-> 
-> **[0:43 - Roy]:** *"Diseñamos tres cotas matemáticas en local: primero, homografía normalizada con filtro exponencial adaptativo para que la cámara en movimiento no haga saltar la cancha; segundo, el Algoritmo Húngaro con cierre transitivo para que dos jugadores que se cruzan no intercambien identidades; y tercero, derivadas con Savitzky-Golay acotadas a nueve punto cinco metros por segundo. Nadie en Omnimorph corre más rápido que un velocista olímpico."*  
-> 
-> **[1:05 - Presentador]:** *"Con la física estabilizada, enviamos resúmenes tácticos de menos de quinientos bytes a IBM Cloud, donde **watsonx Orchestrate ADK** los procesa en CPU en menos de uno punto cinco segundos. Veamos el motor en acción."*
-
-* **Notas de entonación:** Transición fluida. Roy habla con rigor de ingeniero de sistemas; el presentador retoma con dinamismo hacia la pantalla en vivo.
-
----
-
-### Bloque 3: Demostración en Vivo de los 4 Paneles (1:15 - 2:15 | 60 segundos)
-
-#### 🖼️ Elemento Visual en Pantalla:
-* Captura directa de pantalla a 1080p del **Dashboard Sincronizado Omnimorph**.
-* Los 4 Paneles operando en tiempo real con reloj maestro visible `(frame, t)` en la esquina superior:
-  1. **Panel Superior Izquierdo (Video 1080p):** Jugada real de 30 segundos con bounding boxes de colores por equipo y puntos clave de la cancha.
-  2. **Panel Superior Derecho (Radar Cenital 2D):** Cancha métrica de 120×70 metros donde los 22 jugadores se mueven con trayectorias suaves en sincronía absoluta.
-  3. **Panel Inferior Izquierdo (Métricas de Ventana de 4.0s):** Gráfica de compacidad defensiva (18.4 m), altura de bloque (42.1 m) y velocidad de transición.
-  4. **Panel Inferior Derecho (Granite 3 8B + Audio en Español):** Texto táctico generándose palabra por palabra con indicador de TTS activo.
-* **Barra Inferior:** Los 9 semáforos de observabilidad (`M1: Tracking`, `M2: Homografía`, `M3: Gobernanza`, `M4: Audio Sync`, etc.) en verde brillante con estado `PASS` y desfase temporal $< 40\text{ ms}$.
-
-#### 🎙️ Guión Palabra por Palabra para el Orador:
-
-> **[1:15]** *"Aquí ven la pantalla en vivo de Omnimorph. Los cuatro paneles están sincronizados bajo un mismo reloj maestro con un desfase menor a cuarenta milisegundos.*  
-> 
-> **[1:27]** *En el panel superior izquierdo tenemos el video de transmisión. Miren ahora a la derecha: el radar cenital transforma instantáneamente la perspectiva plana en coordenadas métricas reales. Vean cómo los jugadores se cruzan en el medio campo sin saltos ni pérdida de identidad.*  
-> 
-> **[1:42]** *En el panel inferior izquierdo, calculamos cada cuatro segundos la compacidad del bloque y la velocidad de transición.*  
-> 
-> **[1:50]** *Y aquí, en el panel inferior derecho, **Granite 3 8B** de IBM analiza esa geometría y genera la crónica táctica en español:*  
-> 
-> *(Se escucha audio del sistema en segundo plano: 'El bloque defensivo bascula hacia banda derecha manteniendo compacidad de dieciocho metros; se detecta desmarque de ruptura al carril central.')*  
-> 
-> **[2:05]** *Abajo pueden verificar los nueve semáforos de observabilidad del sistema: todos en verde, todos en PASS, sin latencia ni cuellos de botella."*
-
-* **Notas de entonación:** El presentador guía los ojos del jurado con el cursor o resaltados animados. Dejar escuchar 3 segundos de la voz sintética de Granite 3 8B.
-
----
-
-### Bloque 4: Democratización y Semillero Amateur (2:15 - 2:45 | 30 segundos)
-
-#### 🖼️ Elemento Visual en Pantalla:
-* **2:15 - 2:25:** Animación de transición: la toma de transmisión de estadio se encoge y entra en la pantalla de un smartphone montado en un tripié básico junto a una cancha de tierra.
-* **2:25 - 2:45:** Despliegue del **"Pasaporte Táctico Objetivo"** en formato tarjeta digital / PDF descargable:
-  * Foto de Mateo, 16 años, posición: Mediocentro.
-  * Gráficas: Velocidad punta real ($7.8\text{ m/s}$), Compacidad promedio ($18.4\text{ m}$), 14 coberturas defensivas efectivas.
-  * Diagnóstico emitido por Granite 3 8B: *"Pivote posicional con alto sentido de equilibrio espacial y anticipación; apto para estructura táctica de alta exigencia."*
-  * Gráfico comparativo: Visoría tradicional (0 goles, 6 toques $\rightarrow$ Descartado) vs. Omnimorph (Puntuación táctica percentil 88 $\rightarrow$ Prospecto).
-
-#### 🎙️ Guión Palabra por Palabra para el Orador:
-
-> **[2:15]** *"Este mismo motor no necesita cámaras de cincuenta mil dólares. Con un teléfono celular común en un tripié al borde de cualquier campo amateur, generamos esto: el **Pasaporte Táctico Objetivo**.*  
-> 
-> **[2:27]** *En una visoria tradicional de quince minutos, Mateo habría sido descartado porque tocó el balón seis veces y no anotó gol. Con Omnimorph, el reclutador ve que sostuvo la compacidad del equipo en dieciocho metros y recuperó catorce balones.*  
-> 
-> **[2:39]** *Cambiamos la opinión subjetiva y el compadrazgo por telemetría certificada al alcance de cualquier familia."*
-
-* **Notas de entonación:** Voz apasionada pero contenida. Enfatizar el contraste entre "descartado en 15 minutos" y "telemetría certificada".
-
----
-
-### Bloque 5: Trazabilidad Ética, Gobernanza y Cierre (2:45 - 3:00 | 15 segundos)
-
-#### 🖼️ Elemento Visual en Pantalla:
-* **2:45 - 2:53:** Vista del monitor de gobernanza activa:
-  * Ventana de código mostrando el archivo `governance_audit.jsonl` generado por el **Monitor M3** de watsonx.governance.
-  * Indicadores visibles: Verificación cruzada entre texto y métricas (Cero alucinación), Consumo de tokens registrado, Costo: $\$0.003\text{ USD}$ por minuto.
-* **2:53 - 3:00:** Diapositiva final con el logotipo de **Omnimorph**, escudo del equipo y leyenda:
-  * *"Omnimorph: Donde la física de cancha se encuentra con IBM watsonx."*
-  * Repositorio GitHub y enlaces de contacto.
-
-#### 🎙️ Guión Palabra por Palabra para el Orador:
-
-> **[2:45]** *"Cada palabra generada está auditada en `governance_audit.jsonl` bajo **watsonx.governance**, validando que la IA nunca invente una jugada que la física no respalde.*  
-> 
-> **[2:53]** *El talento en México nunca ha faltado; lo que faltaba era un lente objetivo que lo hiciera visible. Eso es Omnimorph. Muchas gracias."*
-
-* **Notas de entonación:** Mirada fija a cámara, remate contundente, tono de cierre formal y agradecimiento profesional.
-
----
-
-## 🎯 Tabla Resumen de Métricas de Entrega y Producción
-
-| Parámetro | Requisito Oficial | Calibración en Omnimorph | Verificación |
+| Bloque Temporal | Diapositiva Correspondiente | Enfoque Principal | Elemento en Pantalla |
 | :--- | :--- | :--- | :--- |
-| **Tiempo Total de Video** | Exactamente 3:00 min (180 s) | 35 s + 40 s + 60 s + 30 s + 15 s = 180 s | 100% Calibrado |
-| **Palabras Totales Guión** | 380 - 410 palabras habladas | 398 palabras | Velocidad natural de 133 ppm |
-| **Presencia Tecnológica IBM** | watsonx Orchestrate + Granite 3 8B + Governance | Bloques 2, 3 y 5 con evidencia viva | PASS |
-| **Participación Técnica Roy** | Slot modular de visión por computadora | Bloque 2 (0:43 a 1:05: 22 s exclusivos) | Integración orgánica |
-| **Lenguaje y Tono** | Cero clichés corporativos de IA | Vocabulario de fútbol real y métricas duras | Cumple `GEMINI.md` |
+| **0:00 – 0:18 (18 s)** | **Diapositiva 2: El Problema** | Análisis tardío y libretas manuales | Clip de partido real sin logos; pausa en laptop y libreta manual. |
+| **0:18 – 0:32 (14 s)** | **Diapositiva 3: Audiencia y Usuarios** | Cuerpos técnicos y equipos formativos | Presentación del clip: Costa Rica vs. San Cristóbal y Nieves. |
+| **0:32 – 1:08 (36 s)** | **Diapositiva 4: La Solución (Omnimorph)** | Detección en movimiento y radar cenital | Video con marcas de seguimiento → Transición a radar cenital 2D. |
+| **1:08 – 1:48 (40 s)** | **Diapositiva 4 (Cont.): MATEO y Verificación** | Voz táctica de Granite y 9 comprobaciones | Audio de MATEO (6 s) + Etiquetas «Por validar» (9 de 9 PASS). |
+| **1:48 – 2:12 (24 s)** | **Diapositiva 4 (Cont.): Chat Interactivo** | Consultas analíticas en lenguaje natural | Pregunta al chat en vivo sobre mediocampo y respuesta completa. |
+| **2:12 – 2:38 (26 s)** | **Diapositiva 5: Diagrama de Arquitectura** | Diagrama de goles, flujo técnico e IBM Bob | Página de Partido (diagrama de goles) → Diagrama de flujo con logos IBM. |
+| **2:38 – 3:00 (22 s)** | **Diapositiva 7: Cierre y Visión** | Propósito, semillero, equipo y remate | Radar activo → Tarjetas de Roy, Mariana y Fer → Logo y punchline. |
+
+---
+
+## 📑 Estructura Diapositiva por Diapositiva y Guion de Locución
+
+---
+
+### Diapositiva 1: Instrucciones (Eliminar en la Entrega Final)
+
+* **Propósito en plantilla:** Diapositiva de guía provista en el template básico de IBM SkillsBuild.
+* **Acción obligatoria:** **Eliminar en la versión final de entrega.** No forma parte de la presentación pública ni del video evaluable.
+
+---
+
+### Diapositiva 2: El Problema
+
+* **Título de la Diapositiva:** **El Problema**
+* **Contenido Clave:**
+  * La dependencia crítica de análisis tardíos: en el fútbol se toman decisiones *"después del partido"*, cuando el resultado ya no se puede cambiar.
+  * La brecha tecnológica: sin analistas dedicados ni herramientas de miles de dólares, el cuerpo técnico termina pausando videos de televisión y apuntando observaciones subjetivas a mano en una libreta.
+  * Riesgo operacional: **para un cuerpo técnico, un dato equivocado es peor que no tener datos.**
+* **Tiempo en Video:** **0:00 – 0:18 (18 segundos)**
+* **Visual en Pantalla:** Clip de un partido real, sin logos ni elementos identificables de transmisión televisiva. A la mitad del segmento, corte a alguien pausando un partido en una laptop y apuntando con bolígrafo en una libreta de papel.
+
+#### 🎙️ Guion de Locución (Palabra por Palabra):
+
+> **[0:00]** *"En el fútbol todos opinamos. Siempre hay un cuñado que sabe qué había que hacer… después del partido.*  
+> 
+> **[0:08]** *Un equipo necesita saberlo antes. Y sin analistas, eso significa ver un partido, pausarlo y apuntar en una libreta."*
+
+---
+
+### Diapositiva 3: Audiencia y Usuarios
+
+* **Título de la Diapositiva:** **Audiencia y Usuarios**
+* **Contenido Clave:**
+  * **Cuerpos técnicos profesionales y de expansión:** Entrenadores y analistas que necesitan anticipar decisiones tácticas durante el juego o preparar el siguiente encuentro sin esperar días por un reporte externo.
+  * **Fútbol formativo y semilleros comunitarios:** Clubes, escuelas y ligas juveniles que no tienen presupuesto para sensores GPS ni cámaras de 50,000 dólares, y cuyo único recurso es una grabación de celular desde la banda.
+  * **El puente unificador:** Una herramienta que traduce video estándar monocular en telemetría comprensible para cualquier categoría del deporte.
+* **Tiempo en Video:** **0:18 – 0:32 (14 segundos)**
+* **Visual en Pantalla:** Arranca el clip de video original. En pantalla se despliega el identificador de Omnimorph y el contexto de evaluación de IBM SkillsBuild. A los 0:28 transición a la toma «Con marcas» con 4 segundos de música de fondo.
+
+#### 🎙️ Guion de Locución (Palabra por Palabra):
+
+> **[0:18]** *"Somos Omnimorph, del AI Experiential Learning Lab de IBM SkillsBuild. Este es un clip real: Costa Rica contra San Cristóbal y Nieves.*  
+> 
+> **[0:28]** *(Transición a video con marcas de seguimiento. 4 segundos solo con música).*  
+> 
+> **[0:32]** *Omnimorph detecta a los jugadores y sigue el balón. La cámara se mueve todo el tiempo y, aun así, calcula dónde está cada uno en la cancha."*
+
+---
+
+### Diapositiva 4: La Solución (Omnimorph)
+
+* **Título de la Diapositiva:** **La Solución: Omnimorph**
+* **Contenido Clave:**
+  * **Detección y Homografía Adaptativa:** Detección de los 22 jugadores y seguimiento de trayectoria del balón con cámara móvil, proyectando posiciones en un radar cenital 2D de 120×70 metros.
+  * **MATEO + IBM Granite:** Narración táctica en lenguaje natural en español generada por `ibm/granite-3-8b-instruct` y locutada por la voz sintética de MATEO en tiempo real sobre la jugada.
+  * **Chat Táctico Interactivo:** Consultas analíticas en lenguaje natural sobre el desarrollo del partido con respaldo numérico.
+  * **Verificación Rigurosa:** Sistema de observabilidad con **9 comprobaciones automáticas**. Las métricas cinemáticas que aún no alcanzan los niveles de confianza deseados se marcan explícitamente como «Por validar» en lugar de mostrar datos imprecisos.
+* **Tiempo en Video:** **0:32 – 2:12 (100 segundos)**
+* **Visual en Pantalla:**
+  * *0:47:* Aparece el Radar Cenital 2D sincronizado con el video. Se aprecian las líneas de bloque y ocupación espacial.
+  * *1:08 – 1:18:* Voz de MATEO narrando 6 segundos continuos mientras el presentador guarda silencio activo.
+  * *1:24 – 1:48:* Zoom a las etiquetas «Por validar» sobre futbolistas y la barra de estado con la leyenda «Análisis verificado (9 de 9 comprobaciones)».
+  * *1:48 – 2:12:* Interfaz del chat: se teclea en tiempo real la pregunta: *«¿Por qué el equipo A perdió el mediocampo en el minuto 20?»* y aparece la respuesta táctica estructurada.
+
+#### 🎙️ Guion de Locución (Palabra por Palabra):
+
+> **[0:47]** *(Aparece el radar 2D sincronizado).*  
+> *"Así ves en qué mitad se juega, qué tan adelantado está cada equipo y cuánto espacio ocupa. Y puedes comprobarlo en el mismo video.*  
+> 
+> **[1:08]** *Y además lo explica.*  
+> 
+> **[1:10]** *(Se escucha la narración táctica de MATEO durante 6 segundos. La voz en off calla).*  
+> 
+> **[1:18]** *Él es MATEO. IBM Granite escribe lo que pasa y MATEO te lo narra en español mientras ves la jugada.*  
+> 
+> **[1:24]** *(En pantalla se aprecian las etiquetas «Por validar» y la leyenda «Análisis verificado (9 de 9 comprobaciones)»).*  
+> *Para un cuerpo técnico, un dato equivocado es peor que no tener el dato. Por eso marcamos lo que falta validar. Cada análisis pasa por nueve revisiones automáticas. Las métricas cinemáticas que aún no alcanzan los niveles de confianza deseados las marcamos «Por validar» hasta que pasen las comprobaciones.*  
+> 
+> **[1:48]** *(El chat en pantalla: escriben «¿Por qué el equipo A perdió el mediocampo en el minuto 20?» y aparece la respuesta).*  
+> *Si quieres saber algo más, le preguntas. Responde con los datos del partido completo."*
+
+---
+
+### Diapositiva 5: Diagrama de Arquitectura
+
+* **Título de la Diapositiva:** **Diagrama de Arquitectura**
+* **Contenido Clave:**
+  * **Capa Local (Borde / Privacidad):** El video se procesa localmente en memoria sin almacenar cuadros ni comprometer derechos de transmisión ni datos biométricos de los jugadores.
+  * **Motor Cinemático:** Homografía adaptativa normalizada $H/H_{2,2}$, Algoritmo Húngaro para resolución de oclusiones y derivadas Savitzky-Golay acotadas biológicamente.
+  * **Capa de Nube (IBM watsonx):** Orquestación y razonamiento con **IBM Granite** en **watsonx.ai** a través de resúmenes vectoriales compactos ($< 500\text{ bytes}$ por ventana).
+  * **Desarrollo y Gobernanza:** Construido y depurado con el apoyo de **IBM Bob** y supervisado por monitores automáticos de consistencia.
+* **Tiempo en Video:** **2:12 – 2:38 (26 segundos)**
+* **Visual en Pantalla:** 
+  * *2:12:* Página de Partido en la plataforma: visualización del diagrama de goles con scroll lento.
+  * *2:30:* Página de Método: despliegue del diagrama de flujo técnico con los componentes de visión local, watsonx.ai, Granite y los logotipos de IBM.
+
+#### 🎙️ Guion de Locución (Palabra por Palabra):
+
+> **[2:12]** *(Página de Partido: diagrama de los goles, con scroll lento).*  
+> *"En la página de Partido puedes consultar el diagrama de los goles.*  
+> 
+> **[2:30]** *(Página de Método: diagrama de flujo con logos de IBM).*  
+> *Lo construimos en unas siete semanas, con IBM Granite en watsonx.ai y con IBM Bob, gracias a la ayuda de estas herramientas y a todo lo que aprendimos. El procesamiento del video se hace localmente."*
+
+---
+
+### Diapositiva 6: Demostración en Vivo
+
+* **Título de la Diapositiva:** **Demostración en Vivo**
+* **Contenido Clave:**
+  * **Caso Real Validado:** Prueba ejecutada sobre un clip broadcast real de 36 segundos del encuentro internacional **Costa Rica vs. San Cristóbal y Nieves**.
+  * **Los 4 Elementos Operativos en Pantalla:**
+    1. *Video marcado:* Detección de siluetas de jugadores, asignación cromática de equipo y seguimiento del balón.
+    2. *Radar métrico 2D:* Representación cenital estabilizada sin saltos de perspectiva.
+    3. *Chat interactivo:* Respuestas analíticas inmediatas sustentadas en la telemetría del encuentro.
+    4. *Diagrama de goles y eventos:* Reconstrucción espacial de jugadas clave en la plataforma.
+  * **Rendimiento Comprobado:** Desfase temporal reloj de video vs. radar menor a 40 milisegundos y cero alucinaciones tácticas.
+* **Tiempo en Video:** Integrada visualmente a lo largo del segmento central (0:18 – 2:30) y referenciada en la presentación para guiar los ojos del evaluador sobre la funcionalidad real.
+
+---
+
+### Diapositiva 7: Cierre y Visión de Futuro
+
+* **Título de la Diapositiva:** **Cierre y Visión de Futuro**
+* **Contenido Clave:**
+  * **Estado Actual:** Prototipo funcional probado con 36 segundos de video real.
+  * **Siguiente Paso Técnico:** Extender la autocalibración por anclajes geométricos a videos grabados con teléfonos móviles en canchas de fútbol amateur y formativo.
+  * **Propósito Central:** *"Que ningún jugador quede fuera por falta de datos."*
+  * **Presentación del Equipo:**
+    * **Rogelio (Roy):** Líder Técnico, Modelado Físico & Visión por Computadora.
+    * **Mariana:** Coordinación de Producto, Experiencia de Usuario (UX) & Estrategia.
+    * **Fernanda (Fer):** Arquitectura Cloud, watsonx Orchestrate & Gobernanza de IA.
+  * **Llamado / Remate:** Identidad de marca y punchline de recordación.
+* **Tiempo en Video:** **2:38 – 3:00 (22 segundos)**
+* **Visual en Pantalla:** El radar y el video continúan corriendo sincronizados en segundo plano. A los 2:50 se despliega la diapositiva con las fotos, nombres y roles de los tres integrantes del equipo. En los últimos 4 segundos entra el logotipo de Omnimorph y el cierre formal.
+
+#### 🎙️ Guion de Locución (Palabra por Palabra):
+
+> **[2:38]** *"Hoy Omnimorph es un prototipo, probado con treinta y seis segundos de un partido real. Lo siguiente es probarlo con el video de celular que tienen los equipos más chicos.*  
+> 
+> **[2:46]** *Que ningún jugador quede fuera por falta de datos.*  
+> 
+> **[2:49]** *(Pausa. En pantalla: Diapositiva con fotos, nombres y roles del equipo: Roy, Mariana y Fer).*  
+> 
+> **[2:54]** *(Entra el logotipo de Omnimorph).*  
+> *Omnimorph. Para que la próxima vez… no te lo cuente tu cuñado."*
+
+---
+
+## 🎯 Matriz de Verificación y Rúbrica Técnica
+
+| Requisito | Cumplimiento en este Documento | Estado |
+| :--- | :--- | :--- |
+| **Coincidencia Textual con PDF v2** | Todas las frases de locución coinciden palabra por palabra con el PDF *Guion final v2*. | **100% PASS** |
+| **Títulos en Español** | Todas las diapositivas llevan títulos normalizados en español. | **100% PASS** |
+| **Tiempo Total de Video** | 18 s + 14 s + 36 s + 40 s + 24 s + 26 s + 22 s = 180 segundos exactos (3:00). | **100% PASS** |
+| **Presencia del Stack IBM** | IBM Granite en watsonx.ai, watsonx Orchestrate, IBM Bob y 9 revisiones automáticas. | **100% PASS** |
+| **Sección de Integrantes** | Roy (Técnica/Visión), Mariana (Producto/UX) y Fer (Cloud/Gobernanza) en Diapositiva 7. | **100% PASS** |
+| **Tono y Reglas `GEMINI.md`** | Directo, honestidad de prototipo, cero clichés de mercadotecnia abstracta. | **100% PASS** |
